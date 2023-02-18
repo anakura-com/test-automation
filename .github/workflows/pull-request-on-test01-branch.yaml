@@ -1,0 +1,17 @@
+# Invoked when pull request is created on 'test01' branch.
+name: Test01
+
+on:
+  pull_request:
+    branches: [test01]
+
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: Write-Host Hello!
