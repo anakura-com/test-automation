@@ -3,7 +3,8 @@ name: Test01
 
 on:
   pull_request:
-    branches: [test01]
+    branches:
+      - test01
 
 defaults:
   run:
