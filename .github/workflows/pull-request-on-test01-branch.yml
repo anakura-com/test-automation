@@ -5,6 +5,9 @@ on:
   pull_request:
     branches:
       - test01
+  push:
+    branches:
+      - main
 
 defaults:
   run:
@@ -13,6 +16,8 @@ defaults:
 jobs:
   job01:
     runs-on: ubuntu-latest
+
     steps:
       - name: Say Hello
         run: Write-Host Hello!
+
